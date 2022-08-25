@@ -1,0 +1,159 @@
+*{
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: minmax(22rem,24rem) repeat(4, 1fr);
+    grid-template-areas: 
+        "nav content content content content";
+    width: 100vw;
+    height: 100vh;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    grid-area: nav;
+    background-color: navy;
+    color: white;
+    z-index: 2;
+}
+
+
+.nav ul{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    line-height: 2;
+    list-style: none;
+    padding: .5rem;
+}
+
+.navheader{
+    margin: 1rem 0 2rem 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: .5rem;
+}
+
+.navlinks{
+    margin: 0 0 0 1.5rem;
+    grid-row: 3 / 13;
+
+}
+
+.content{
+    display: grid;
+    grid-area: content;
+    grid-template-rows: minmax(10rem,12rem) repeat(4,1fr);
+    grid-template-areas: 
+        "contentheader"
+        "contentbody"
+        "contentbody"
+        "contentbody"
+        "contentbody";
+}
+
+.contentheader{
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: repeat(8,1fr);
+    grid-area: contentheader;
+    grid-template-areas:
+        "searchbox searchbox searchbox searchbox searchbox userinfo userinfo userinfo"
+        "greeting greeting greeting greeting greeting buttons buttons buttons";
+    z-index: 1;
+    box-shadow: 0 2px 4px 4px rgba(0,0,0,.25);
+}
+
+.searchbox{
+    grid-area: searchbox;
+}
+
+.userinfo{
+    grid-area: userinfo;
+}
+
+.greeting{
+    grid-area: greeting;
+}
+
+.buttons{
+    grid-area: buttons;
+}
+
+.contentbody{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-area: contentbody;
+    grid-template-areas:
+        "projects projects projects announcements";
+    grid-gap: 1rem;
+    background-color: lightgray;
+}
+
+.projects{
+    margin: 1rem 0 0 1rem;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(2rem,4rem) repeat(3,1fr) minmax(2rem,4rem);
+    grid-area: projects;
+    grid-template-areas: 
+        "projectsheader projectsheader"
+        "projectitems projectitems"
+        "projectitems projectitems"
+        "projectitems projectitems";
+}
+
+.projectsheader{
+    grid-area: projectsheader;
+    font-size: 1.5rem;
+}
+
+.projectitems{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3,1fr);
+    grid-gap: 1rem;
+    grid-area: projectitems;
+}
+
+.projectitem{
+    background-color: white;
+}
+
+.announcements{
+    margin: 1rem 1rem 0 0;
+    display: grid;
+    grid-template-rows: minmax(2rem,4rem) 2fr minmax(2rem,4rem) 2fr minmax(2rem,4rem);
+    grid-template-areas:
+        "announcementsheader"
+        "announcementbox"
+        "trendingheader"
+        "trendingbox";
+    grid-area: announcements;
+}
+
+.announcementsheader{
+    grid-area: announcementsheader;
+    font-size: 1.5rem;
+}
+
+.announcementbox{
+    grid-area: announcementbox;
+    background-color: white;
+}
+
+.trendingheader{
+    grid-area: trendingheader;
+    font-size: 1.5rem;
+}
+
+.trendingbox{
+    grid-area: trendingbox;
+    background-color: white;
+}
+
