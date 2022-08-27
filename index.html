@@ -2,6 +2,10 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,16 +18,16 @@
          <div class="navheader">Dashboard</div>
          <div class="navlinks">
             <ul>
-                <li>Home</li>
-                <li>Profile</li>
-                <li>Messages</li>
-                <li>History</li>
-                <li>Tasks</li>
-                <li>Community</li>
+                <li><i class="material-icons">home</i> Home</li>
+                <li><i class="material-icons">badge</i> Profile</li>
+                <li><i class="material-icons">chat</i> Messages</li>
+                <li><i class="material-icons">schedule</i> History</li>
+                <li><i class="material-icons">file_copy</i> Tasks</li>
+                <li><i class="material-icons">people</i> Community</li>
                 <br/>
-                <li>Settings</li>
-                <li>Support</li>
-                <li>Privacy</li>
+                <li><i class="material-icons">settings</i> Settings</li>
+                <li><i class="material-icons">help</i> Support</li>
+                <li><i class="material-icons">verified_user</i> Privacy</li>
             </ul>
          </div>
         </div>
@@ -31,17 +35,41 @@
         <div class="content">
             
             <div class="contentheader">
-                <div class="searchbox">ass</div>
-                <div class="userinfo">ass</div>
-                <div class="greeting">ass</div>
-                <div class="buttons">shit</div>
+                <div class="searchbox">
+                    <div><i class="material-icons">search</i></div>
+                    <div><input type="text" id="search"></div>
+                </div>
+                <div class="userinfo">
+                    <div><i class="material-icons">notifications</i></div>
+                    <div><img src="images/wick.jpg"></div>
+                    <div>Morgan Oakley</div>
+                </div>
+                
+                <div class="greeting">
+                    <div class="greetingpic"><img src="images/wick.jpg"></div>
+                    <div class="greetingname"><p>Hi there,</p> <h1>Morgan Oakley (@morgan)</h1></div>
+                </div>
+                
+                <div class="buttons">
+                    <div><button id="new">New</button></div>
+                    <div><button id="upload">Upload</button></div>
+                    <div><button id="share">Share</button></div>
+                </div>
+
             </div>
 
             <div class="contentbody">
                <div class="projects">
                 <div class="projectsheader">Projects</div>
                 <div class="projectitems">
-                    <div class="projectitem">Lorem ipsum dolor sit amet.</div>
+                    <div class="projectitem">
+                        <div class="project"><h1>Super Cool Project</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas laborum expedita debitis animi ipsam consequatur quidem recusandae non cumque, aliquid autem culpa cupiditate omnis, quibusdam, veniam cum voluptatum dolorem!</p></div>
+                        <div class="projectbuttons">
+                            <div class="favorite"><i class="material-icons">favorite</i></div>
+                            <div class="watch"><i class="material-icons">visibility</i></div>
+                            <div class="share"><i class="material-icons">share</i></div>
+                        </div>
+                    </div>
                     <div class="projectitem">Lorem ipsum dolor sit amet.</div>
                     <div class="projectitem">Lorem ipsum dolor sit amet.</div>
                     <div class="projectitem">Lorem ipsum dolor sit amet.</div>
@@ -52,9 +80,18 @@
 
                <div class="announcements">
                 <div class="announcementsheader">Announcements</div>
-                <div class="announcementbox">Lorem ipsum dolor sit amet.</div>
+                <div class="announcementbox">
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus numquam id modi fugiat atque! Eius?</div>
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error vero atque quia reprehenderit porro minima?</div>
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sed assumenda nam. Asperiores, totam ratione!</div>
+                </div>
                 <div class="trendingheader">Trending</div>
-                <div class="trendingbox">Lorem ipsum dolor sit amet.</div>
+                <div class="trendingbox">
+                    <div><div><img src="images/wick.jpg"></div><div><p>@tegan</p><p>World Peace Builder</p></div></div>
+                    <div><div><img src="images/wick.jpg"></div><div><p>@morgan</p><p>Super Cool Project</p></div></div>
+                    <div><div><img src="images/wick.jpg"></div><div><p>@kendall</p><p>Life Changing App</p></div></div>
+                    <div><div><img src="images/wick.jpg"></div><div><p>@alex</p><p>No Traffic Maker</p></div></div>
+                </div>
                </div>
             </div>
 
